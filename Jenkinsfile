@@ -9,7 +9,7 @@ pipeline {
     }
 
     stages {
-       stages ("build") {
+       stage ("build") {
               steps {
                    sh 'mvn clean deploy'
               }
